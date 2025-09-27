@@ -1,0 +1,40 @@
+// Import Carbon styles
+@use '@carbon/styles/scss/config' with (
+  $prefix: 'cds'
+);
+@use '@carbon/styles/scss/styles.scss';
+
+// Custom styles for Egovia
+:root {
+  --egovia-primary: #0f62fe;
+  --egovia-secondary: #393939;
+  --egovia-success: #24a148;
+  --egovia-warning: #f1c21b;
+  --egovia-danger: #da1e28;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Government-specific styling
+.egovia-header {
+  border-bottom: 3px solid var(--egovia-primary);
+}
+
+.egovia-hero {
+  background: linear-gradient(135deg, var(--egovia-primary) 0%, var(--egovia-secondary) 100%);
+  color: white;
+}
+
+.egovia-card {
+  transition: transform 0.2s ease-in-out;
+  
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
