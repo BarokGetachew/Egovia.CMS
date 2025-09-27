@@ -173,8 +173,8 @@ const mockPages: Page[] = [
         title: 'Start Using Public Transit Today',
         content: 'Download our transit app for real-time schedules, route planning, and mobile ticketing.',
         items: [
-          { title: 'Download App', href: '/transit/app' },
-          { title: 'View Routes', href: '/transit/routes' }
+          { title: 'Download App', description: 'Get the official transit app for mobile ticketing and real-time updates', href: '/transit/app' },
+          { title: 'View Routes', description: 'Browse all available bus and rail routes in the city', href: '/transit/routes' }
         ]
       }
     ],
