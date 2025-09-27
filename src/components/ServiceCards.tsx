@@ -2,12 +2,12 @@
 
 import { Tile, ClickableTile, Grid, Column } from '@carbon/react'
 import { 
-  Energy, 
-  Transportation, 
+  Lightning, 
+  Bus, 
   Home, 
   Education,
-  Healthcare,
-  Government,
+  Hospital,
+  Building,
   ArrowRight
 } from '@carbon/icons-react'
 
@@ -15,13 +15,13 @@ const services = [
   {
     title: 'Energy Management',
     description: 'Municipal energy supply, renewable initiatives, and sustainability programs.',
-    icon: Energy,
+    icon: Lightning,
     href: '/detail/municipal-energy'
   },
   {
     title: 'Transportation',
     description: 'Public transit, infrastructure planning, and mobility solutions.',
-    icon: Transportation,
+    icon: Bus,
     href: '/detail/transportation'
   },
   {
@@ -39,13 +39,13 @@ const services = [
   {
     title: 'Public Health',
     description: 'Health services, emergency preparedness, and wellness programs.',
-    icon: Healthcare,
+    icon: Hospital,
     href: '/detail/health'
   },
   {
     title: 'Government Services',
     description: 'Permits, licenses, voting information, and civic engagement.',
-    icon: Government,
+    icon: Building,
     href: '/detail/government'
   }
 ]
