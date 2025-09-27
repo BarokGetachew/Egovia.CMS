@@ -1,15 +1,17 @@
-// Import Carbon styles
+// Import Carbon styles - using @import for compatibility with Next.js build system
 @import '@carbon/styles/scss/styles';
 
-// Custom styles for Egovia
+// Custom CSS variables for Egovia government branding
+// DEVIATION: Added custom color palette beyond Carbon defaults for government identity
 :root {
-  --egovia-primary: #0f62fe;
-  --egovia-secondary: #393939;
-  --egovia-success: #24a148;
-  --egovia-warning: #f1c21b;
-  --egovia-danger: #da1e28;
+  --egovia-primary: #0f62fe;    // Carbon blue for government authority
+  --egovia-secondary: #393939;  // Carbon gray for professional appearance
+  --egovia-success: #24a148;    // Carbon green for success states
+  --egovia-warning: #f1c21b;    // Carbon yellow for warnings
+  --egovia-danger: #da1e28;     // Carbon red for errors/danger
 }
 
+// Global body styling with IBM Plex Sans font
 body {
   margin: 0;
   padding: 0;
@@ -18,17 +20,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-// Government-specific styling
+// Government-specific styling deviations from Carbon defaults
 .egovia-header {
+  // DEVIATION: Added 3px bottom border for government authority visual hierarchy
   border-bottom: 3px solid var(--egovia-primary);
 }
 
 .egovia-hero {
+  // DEVIATION: Custom gradient background for visual impact beyond Carbon hero defaults
   background: linear-gradient(135deg, var(--egovia-primary) 0%, var(--egovia-secondary) 100%);
   color: white;
 }
 
 .egovia-card {
+  // DEVIATION: Added subtle hover animation for interactivity while maintaining accessibility
   transition: transform 0.2s ease-in-out;
   
   &:hover {

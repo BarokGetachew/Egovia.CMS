@@ -1,5 +1,8 @@
 'use client'
 
+// MainLayout component - Universal layout for Egovia CMS
+// Uses IBM Carbon Design System components with government-specific customizations
+
 import { 
   Header, 
   HeaderName, 
@@ -19,7 +22,21 @@ interface MainLayoutProps {
   children: React.ReactNode
 }
 
+/**
+ * MainLayout - Universal site layout component
+ * 
+ * DEVIATIONS from Carbon defaults:
+ * - Custom "egovia-header" class adds government branding border
+ * - Dynamic navigation from mock data instead of hardcoded menu
+ * - Government-appropriate footer structure
+ * 
+ * Features:
+ * - Responsive Carbon grid system
+ * - Accessibility compliance (ARIA labels, skip links)
+ * - Mock data integration ready for Strapi
+ */
 export default function MainLayout({ children }: MainLayoutProps) {
+  // DEVIATION: Using mock data for navigation instead of hardcoded menu items
   const navigation = getNavigation()
   
   return (

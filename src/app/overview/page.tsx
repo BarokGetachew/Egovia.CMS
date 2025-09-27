@@ -1,3 +1,16 @@
+/**
+ * Overview Page - Services hub for Egovia CMS
+ * 
+ * PURPOSE: Display all available government services with filtering and search
+ * CARBON COMPONENTS: Uses Breadcrumb, Search, Tag, Grid, Tile components
+ * MOCK DATA: Dynamically renders services from mock data structure
+ * 
+ * DEVIATIONS from Carbon defaults:
+ * - Custom icon mapping for service categories
+ * - Dynamic service cards generated from mock data
+ * - Government-specific service metadata display
+ */
+
 import MainLayout from '@/components/MainLayout'
 import { 
   Breadcrumb, 
@@ -22,7 +35,7 @@ import {
 } from '@carbon/icons-react'
 import { getAllPages } from '@/lib/mockData'
 
-// Icon mapping for categories
+// DEVIATION: Custom icon mapping for service categories beyond Carbon defaults
 const categoryIcons: Record<string, any> = {
   'Energy': Energy,
   'Transportation': Transportation,

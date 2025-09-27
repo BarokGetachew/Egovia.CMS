@@ -1,5 +1,13 @@
-// Mock data structures for Egovia CMS
-// This will be replaced with Strapi API calls in October
+/**
+ * Mock data structures for Egovia CMS
+ * 
+ * PURPOSE: Simulate Strapi CMS API responses for September 2025 frontend development
+ * REPLACEMENT: This will be replaced with Strapi API calls in October 2025
+ * 
+ * STRUCTURE: Designed to match future Strapi content types and API responses
+ * 
+ * CARBON INTEGRATION: All components use this data structure for dynamic rendering
+ */
 
 export interface MenuItem {
   title: string
