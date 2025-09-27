@@ -23,12 +23,12 @@ import {
   ClickableTile
 } from '@carbon/react'
 import { 
-  Energy, 
-  Transportation, 
+  Lightning, 
+  Bus, 
   Home, 
   Education,
-  Healthcare,
-  Government,
+  Hospital,
+  Building,
   ArrowRight,
   Time,
   User
@@ -37,12 +37,12 @@ import { getAllPages } from '@/lib/mockData'
 
 // DEVIATION: Custom icon mapping for service categories beyond Carbon defaults
 const categoryIcons: Record<string, any> = {
-  'Energy': Energy,
-  'Transportation': Transportation,
+  'Energy': Lightning,
+  'Transportation': Bus,
   'Housing': Home,
   'Education': Education,
-  'Health': Healthcare,
-  'Government': Government
+  'Health': Hospital,
+  'Government': Building
 }
 
 export default function OverviewPage() {
@@ -50,7 +50,7 @@ export default function OverviewPage() {
     title: page.title,
     description: page.description,
     category: page.category,
-    icon: categoryIcons[page.category] || Government,
+    icon: categoryIcons[page.category] || Building,
     lastUpdated: page.lastUpdated,
     author: page.author,
     href: `/detail/${page.slug}`

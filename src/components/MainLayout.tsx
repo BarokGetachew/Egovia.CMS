@@ -11,8 +11,7 @@ import {
   HeaderGlobalBar,
   HeaderGlobalAction,
   SkipToContent,
-  Content,
-  Footer
+  Content
 } from '@carbon/react'
 import { Search, Notification, UserAvatar } from '@carbon/icons-react'
 import Link from 'next/link'
@@ -73,7 +72,7 @@ export default function MainLayout({ children }: MainLayoutProps) {
         {children}
       </Content>
       
-      <Footer>
+      <footer className="cds--grid cds--grid--full-width">
         <div className="cds--grid">
           <div className="cds--row">
             <div className="cds--col-lg-4">
@@ -106,7 +105,7 @@ export default function MainLayout({ children }: MainLayoutProps) {
             </div>
           </div>
         </div>
-      </Footer>
+      </footer>
     </>
   )
 }

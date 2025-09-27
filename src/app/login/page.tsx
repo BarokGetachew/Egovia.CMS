@@ -135,7 +135,7 @@ export default function LoginPage() {
                     id="remember-me"
                     labelText="Remember me"
                     checked={rememberMe}
-                    onChange={(checked) => setRememberMe(checked)}
+                    onChange={(event) => setRememberMe(event.target.checked)}
                   />
                   <Link href="/forgot-password">
                     Forgot password?
