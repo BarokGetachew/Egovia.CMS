@@ -1,8 +1,5 @@
 // Import Carbon styles
-@use '@carbon/styles/scss/config' with (
-  $prefix: 'cds'
-);
-@use '@carbon/styles/scss/styles.scss';
+@import '@carbon/styles/scss/styles';
 
 // Custom styles for Egovia
 :root {
