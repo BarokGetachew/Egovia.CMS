@@ -1,5 +1,5 @@
-// Import Carbon styles - using @import for compatibility with Next.js build system
-@import '@carbon/styles/scss/styles';
+// Carbon styles are imported via JavaScript components
+// This file contains only custom Egovia-specific styles
 
 // Custom CSS variables for Egovia government branding
 // DEVIATION: Added custom color palette beyond Carbon defaults for government identity
