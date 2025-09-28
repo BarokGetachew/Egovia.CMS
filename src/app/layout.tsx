@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import '@carbon/styles/css/styles.css'
-import '@carbon/styles/css/themes.css'
 import './globals.scss'
 import { ThemeProvider } from '@carbon/react'
 
