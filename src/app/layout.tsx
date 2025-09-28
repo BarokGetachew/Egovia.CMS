@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import '@carbon/styles/css/styles.css'
+import '@carbon/styles/css/themes.css'
 import './globals.scss'
-import { Theme } from '@carbon/react'
+import { ThemeProvider } from '@carbon/react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,9 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Theme theme="g10">
+        <ThemeProvider theme="g10">
           {children}
-        </Theme>
+        </ThemeProvider>
       </body>
     </html>
   )
